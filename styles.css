@@ -14,7 +14,7 @@ li {
     margin: 20px;
 }
 
-h1, main {
+h1, h2, main {
     text-align: center;
 }
 p {
@@ -35,4 +35,9 @@ p {
 
 .contact-box a {
     margin: 20px;
+}
+
+.assignments {
+    max-width: 600px;
+    margin: 0 auto;
 }
