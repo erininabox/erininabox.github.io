@@ -1,0 +1,16 @@
+Hi, I'm Erin!
+
+I'm in this class because I want to learn more of the advanced CSS/HTML topics that I'm not as solid on. I'm about 50/50 on what topics from the syllabus I already have experience on. SEO, animation, and accessbility in particular are areas I need to work on a bit more.
+
+I finished a software engineering immersive (aka a bootcamp) last fall with General Assembly where we focused on React development. While I'm still looking for a full time job, I'm working on filling in some of the gaps in knowledge that I still have. Some of that I know I can teach myself, but some of it I think I'll learn better in a class--like this. Plus, I may or may not go back to school for a degree in software engineering, and if I do that I'll need to have some of those prerequisites done, so it doesn't hurt to try, right?
+
+Before all that, I actually started web development as a teen in the early 2000's, and I remember when CSS started becoming popular and it's so much fun to see what it's turned into all these years later!
+
+This is my office cat, Fuller. He's usually sitting under my monitor on a soft blanket on the corner of my desk, because he's old and he likes to be near Mom. He's 16 years old, and has been with me since around the time I stopped doing web development what feels like eons ago now. He's thrilled that I work from home now!
+
+
+What is the last date/time that late assignments will be accepted and what is the deduction for late assignments?
+- There is a 10% reduction in points for every week the assignment is late. The final date/time to submit assignments is 12/18/22 at 11:59pm
+
+When will he Final Exam open?
+- As far as I can find, there is no final exam--just final homework and forum posts.
