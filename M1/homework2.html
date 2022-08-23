@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../hwStyles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8W1QMCWM1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X8W1QMCWM1');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <li><a href="https://erininabox.github.io/index.html">Erin Halden</a></li>
+            <li><a href="https://erininabox.github.io/assignments.html">Assignments</a></li>
+            <li><a href="https://erininabox.github.io/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="hw-content">
+        <h1>Homework 2 - Google Analytics Basics</h1>
+        <h2>by Erin Halden</h2>
+        
+        <p>Taking a look at the reports snapshot in Google Analytics you will notice some familiar metrics and some metrics that we haven't used before. This will serve as a reference for some of the more notable items on this page.</p>
+
+        <h3>User Activity</h3>
+        <p>The first box you see when you look at this report snapshot is a simple chart of users over time. The default view here shows how many unique users there were. Next to this number is <b>New users</b>, and if you click on this number it will adjust the chart to show you only the traffic from users visiting for the first time during the given time period.</p>
+
+        <p>The way that users are identified is through the use of session cookies. If there is an existing cookie when a person visits the site, they are considered a returning user. If there is no session cookie in their browser, they are considered a new user. This does mean that users who have disabled cookies, or who have recently deleted all their cookies, will be counted again as a new user. This number is generally pretty small, so the numbers provided by Google Analytics for <b>New Users</b> is still a pretty great estimate.</p>
+
+        <p>An interesting metric to check out is <b>Average engagement time</b>, which is shown in the same box next to <b>New users</b>. If you click this, you will get a chart showing how the average engagement time has changed over time. <i>Engagement</i> is how long a user spends interacting with a website. Looking at this chart can give you information about whether the site is increasing in interest for users, or decreasing in interest. After all, a user isn't going to stay on a site that isn't of interest to them! This information can be used to make decisions about content or products.</p>
+
+        <h3>Default Channel Groupings & Tooltips</h3>
+        <p>By now, you may have noticed that when you mouse over some of the headings on this page, a tooltip will pop up explaining the metric. This is really useful for metrics with confusing names such as <b>New users by First user default channel grouping</b>. Try mousing over this to see the provided definition.</p>
+
+        <p>As you can see, this is the plain language definition, and is often more accessible than the given name. In this case <b>First user default channel grouping</b> has its own tooltip explaining that this is the channel by which each new user first arrives at the site. So if you visit a site for the first time by clicking on a link posted by a friend on Facebook, your visit would be tallied under <i>Organic Social</i>. In this case, most of our new visitors are coming from <i>Direct</i> and <i>Organic Search</i> channels.</p>
+        <h5>Most important default channel groups:</h5>
+        <ul>
+            <li><i>Direct</i> - Usually, the user typed the URL directly into their browser. They could also have used a browser bookmark, or a link in an offline word document or PDF.</li>
+            <li><i>Organic Search</i> - This means the user found it through searching using a search engine like Google or Bing</li>
+            <li><i>Organic Social</i> - The user clicked on a link on a social media site that was not a paid ad. Usually this is because someone they follow posted the link.</li>
+            <li><i>Referral</i> - The user clicked on a link on another website it brought them to your site.</li>
+        </ul>
+        <p>There are other default channel groups, and they are mostly connected to different online advertising mediums. A couple of them are marked as "paid" to indicate that they were paid advertisements. Your marketing director can explain the others should you choose to use those advertising strategies.</p>
+
+        <h3>Reports</h3>
+        <p>In addition to this overview page showing you details about your users such traffic, country of origin, and channel grouping, you can also look at more specific reports by looking at the menu located on the left of the page.</p>
+        <p>Under <i>Reports Snapshot</i> on the left, you will see a number of reports listed. You should explore these! To find out what platforms people are using to access your site, you would look to the bottom where it says <i>Tech</i> and click on <i>Tech Overview</i>. This will show you details about the technology users are employing when they visit your site. To the right is a chart detailing <b>Users by Operating System</b> which can give you specific information about which platforms people are generally using. As you look at the next row of boxes, you'll see more information about how many users were using which kind of device. This is broken out by platform/device category, just device category, and also by browser. This can be really useful for your tech team!</p>
+    </main>
+</body>
+</html>
