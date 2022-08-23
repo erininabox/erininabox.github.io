@@ -4,3 +4,7 @@ body {
     font-family: 'Fira Code', 'JetBrains Mono', monospace;
 }
 
+.profile-img {
+    width: 50px;
+    border-radius: 100%;
+}
