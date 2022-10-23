@@ -5,46 +5,52 @@
    <meta name="description" content="a list of great movie titles, name of director and trailer">
    <meta charset="utf-8">
    <style>
-     body { background-color: #DEB887; color: #A52A2A; }
-     header {width: 60%; background-image: url(banner.png); margin: 0 auto; text-align: center; border-shadow: 5px 5px 5px gray; font-size: 1.5rem; color: black;}
-	 div { width: 80%; margin: 0 auto; border: 2px solid #D2691E; padding: 0 10px;}
-     footer {width: 60%; margin: 10px auto; padding: 3px 0; text-align:center; background-color: #A52A2A; color:white; font-size: 0.9rem;}	 
-	 footer img {float:left; margin: 0 5px 5px 0;}
+     body { background-color: #DEB887; color: #000000; }
+     header {width: 60%; margin: 0 auto; text-align: center; font-size: 1.5rem; color: black;}
+     header img { box-shadow: 5px 5px 5px gray; }
+	 section { width: 80%; margin: 0 auto; border: 2px solid #D2691E; padding: 0 10px;}
+     footer {width: 60%; margin: 10px auto; padding: 3px; text-align:center; background-color: #A52A2A; color:white; font-size: 0.9rem; overflow: auto;}	 
+	 footer img {float: left;}
    </style>
 </head>
 <body>
 <header>
+  <img alt="strip of film" src="./banner.png">
 <h1>Great Movies</h1>
 <h2>Great Directors</h2>
 </header>
-<div>
-  <h3>Avatar</h3>
-  <p>Director: James Cameron (born August 16, 1954)</p>
-  <p>Type: Science fiction</p>
-  <p>Release Date: December 18, 2009</p>
-</div>
-<div>
-  <h3>Star Wars: Episode VII</h3>
-  <p>Director: J. J. Abrams (born June 27, 1966)</p>
-  <p>Type: Science fiction</p>
-  <p>Release Date: December 18, 2015</p>
-</div>
-<div>
-  <h3>Titanic</h3>
-  <p>Director: James Cameron (born August 16, 1954)</p>
-  <p>Type: Drama</p>
-  <p>Release Date: December 19, 1997</p>
-</div>
-<div>
-  <h3>Schindler's List</h3>
-  <p>Director: Steven Spielberg (born December 18, 1946)</p>
-  <p>Type: Drama</p>
-  <p>Release Date: December 15, 1993</p>
-</div>
+<main>
+  <section itemscope itemtype="https://schema.org/Movie">
+    <h3 itemprop="name">Avatar</h3>
+    <p itemprop="director" itemscope itemtype="https://schema.org/Person">Director: <span itemprop="name">James Cameron</span> (born <time itemprop="birthDate" datetime="1954-08-16">August 16, 1954</time>)</p>
+    <p>Type: <span itemprop="genre">Science fiction</span></p>
+    <p>Release Date: <time datetime="2009-12-18">December 18, 2009</time></p>
+  </section>
+  <section itemscope itemtype="https://schema.org/Movie">
+    <h3 itemprop="name">Star Wars: Episode VII</h3>
+    <p itemprop="director" itemscope itemtype="https://schema.org/Person">Director: <span itemprop="name">J. J. Abrams</span> (born <time itemprop="birthDate" datetime="1966-06-27">June 27, 1966</time>)</p>
+    <p>Type: <span itemprop="genre">Science fiction</span></p>
+    <p>Release Date: <time datetime="2015-12-18">December 18, 2015</time></p>
+  </section>
+  <section itemscope itemtype="https://schema.org/Movie">
+    <h3 itemprop="name">Titanic</h3>
+    <p itemprop="director" itemscope itemtype="https://schema.org/Person">Director: <span itemprop="name">James Cameron</span> (born <time itemprop="birthDate" datetime="1954-08-16">August 16, 1954</time>)</p>
+    <p>Type: <span itemprop="genre">Drama</span></p>
+    <p>Release Date: <time datetime="1997-12-19">December 19, 1997</time></p>
+  </section>
+  <section itemscope itemtype="https://schema.org/Movie">
+    <h3 itemprop="name">Schindler's List</h3>
+    <p itemprop="director" itemscope itemtype="https://schema.org/Person">Director: <span itemprop="name">Steven Spielberg</span> (born <time itemprop="birthDate" datetime="1946-12-18">December 18, 1946</time>)</p>
+    <p>Type: <span itemprop="genre">Drama</span></p>
+    <p>Release Date: <time datetime="1993-12-15">December 15, 1993</time></p>
+  </section>
+</main>
 <footer>
-  <img src="movielogo.png">
-  <p>List made by CNIT 132A class at CCSF</p>
-  <p>Copyright &copy; 2017</p>
+  <img src="movielogo.png" alt="black and white clipart image of a non-digital movie reel projector">
+  <small>
+    List made by <abbr title="Computer Networking Information Technology">CNIT</abbr> 132A class at <abbr title="City College of San Francisco">CCSF</abbr>
+    <br>Copyright &copy; <time datetime="2017">2017</time>
+  </small>
 </footer>  
 </body>
 </html>
