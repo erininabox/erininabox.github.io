@@ -1,0 +1,65 @@
+$primary-color: #eecccc
+$secondary-color: #fbf4f4
+$highlight-color: #2f2828
+
+@function toRem($value)
+    $remValue: ($value / 16) + rem
+    @return $remValue
+
+@mixin primary-highlight
+    background-color: $primary-color
+    color: $highlight-color
+
+@mixin highlight-primary
+    background-color: $highlight-color
+    color: $primary-color
+
+@mixin cols-odd
+    @include highlight-primary
+    float: left
+
+@mixin base-set
+    width: 100%
+    background-color: $primary-color
+
+
+.wrapper
+    @include base-set
+    font-size: toRem(19.2)
+
+.footer
+    @include base-set
+    font-size: toRem(14.4)
+
+.nav
+    width: 100%
+    background-color: $secondary-color
+    font-size: toRem(16)
+    padding: toRem(3.2)
+    ul
+        li
+            @include primary-highlight
+            width: toRem(160)
+            margin-right: toRem(3.2)
+            border-radius: 5px
+            border: 1px solid transparent
+
+.header
+    width: 100%
+    h1
+        font-size: toRem(40)
+        color: $highlight-color
+
+.col1
+    @include cols-odd
+    width: 50%
+
+.col2
+    @include primary-highlight
+    float: left
+    width: 25%
+    h2
+        color: black
+.col3
+    @include cols-odd
+    width: 25%
