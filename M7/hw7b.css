@@ -1,0 +1,5 @@
+img {
+    float: left;
+    shape-outside: url("house.png");
+    shape-margin: 3%;
+}

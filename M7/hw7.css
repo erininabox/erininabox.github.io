@@ -3,30 +3,39 @@
     color: black;
     font-family: sans-serif;
 }
-body {
-    display: flex;
-    flex-direction: row;
-}
-header {
-    z-index: 10;
-    position: fixed;
-    background: transparent;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-footer {
+.text {
     z-index: 10;
-    position: fixed;
-    bottom: 100px;
+    position: relative;
+    top: 0;
     background: transparent;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
-h1, h2 {
+h1 {
     background: transparent;
+    align-self: center;
+    margin-top: 10vh;
+}
+.slogan {
+    background: transparent;
+    align-self: center; 
+    margin-bottom: 20vh;
+    animation: slogan 2s linear infinite;
+
+}
+@keyframes slogan {
+    0% {
+        font-size: 1.5rem;    
+    }
+    50% {
+        font-size: 2rem;
+    }
+    100% {
+        font-size: 1.5rem;
+    }
 }
 
 @keyframes animatedClouds {
@@ -38,7 +47,7 @@ h1, h2 {
     }
 }
 #sky {
-    position:fixed;
+    position: absolute;
     top:0px;
     left:0px;
     width:100%;
@@ -48,8 +57,12 @@ h1, h2 {
     padding:0px;
     background-color:#C0DEED;
     background: url(clouds.png) center top repeat-x;
+    background-size: 200%;
     padding-top:300px;
     padding-bottom:10px;
     z-index: 0;
     animation: animatedClouds 10s linear infinite;
+}
+img {
+    background: transparent;
 }
