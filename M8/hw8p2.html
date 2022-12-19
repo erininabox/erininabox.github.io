@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="INSERT DESCRIPTION HERE">
+    <meta name="description" content="Homework page for CCSF's CNIT 132S course explaining our analysis of a Google Analytics report from the Fall 2022 semester">
     
     <title>Google Analytics Analysis - CCSF CNIT 132 Assignment</title>
 </head>
@@ -29,7 +29,28 @@
     </nav>
 
     <main class="hw-content">
-        
+        <h1>Google Analytics Analysis</h1>
+        <h3>Homework 8 - CNIT 132S</h3>
+
+        Over the semester we all used Google Analytics to track the traffic on our website. I decided to check out the <a href="./M8/hw8_GA_report.pdf">Google Analytics Events report</a>. This particular report shows how people are visiting and interacting with a website overall. 
+        <h4>Top 5 Most Frequent Events on My Site</h4>
+        <ol>
+            <li>page_view</li>
+            <li>scroll</li>
+            <li>session_start</li>
+            <li>user_engagement</li>
+            <li>first_visit</li>
+        </ol>
+        <p>
+            I think it is important to note that these events are not mutually exclusive. A person visiting a website can do more than one action, and thus more than one event is recorded. Most of these are pretty self explanatory--a page view is when a page loads, for instance. The two metrics that are most interesting to me here are the user_engagement and session_start. User engagement is defined as anytime a page on your site is in the foreground or focus of a computer. If the window is minimized, for example, this would not register as 'user engagement', but if the window is open and at the foreground of the other windows on the screen 'user engagement' is recorded. 'Session start' is more technical. It is what triggers a session ID and session number to be generated. You could say it is roughly equivalent to page views, although these numbers are not technically equivalent. It is when a session is initiated by a user by loading the page. 
+        </p>
+        <p>
+            My particular user engagement and session starts are very similar. On Dec 13th there were 2 session_start events recorded, and 1 user_engagement. This means my page was loaded twice, but only really engaged with once. This could be because someone opened my site and had to reload it at one point. It would count as 1 user_engagement but a new session_start would be initiated.
+        </p>
+        <p>
+            Similarly, on Oct 3rd you can see that I received 3 user_engagement events and 2 session_start events. This means someone opened my website, engaged with it, and then minimized it and came back to before session timed out (30 minutes is default with Google Analytics). 
+        </p>
+
     </main>
 </body>
 </html>

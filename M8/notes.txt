@@ -1,10 +1,6 @@
 page 1 - SEO Strategies
-- link to it on the HOMEWORK page
-- 10 keywords researched
-- tools used to research keywords
 
 page 2 - Analytics Report Analysis
-- link to it on the HOMEWORK page
 - 150 words analyzing the report you chose, related to the data presented in the report
 	- explain the data
 	- does the data suggest anything that could be improved?
@@ -16,6 +12,22 @@ On all 5 pages:
 - title tag - different title for each page
 - at least one heading per page that contains at least 1 keyword
 - at least one link per page that uses meaningful words
-- at least one image on one of the pages related to the topic
-	- alt tag contains >=1 keyword
-- don't create the impression of "spam"
+
+
+hw8p1.html done
+    img done
+hw8p2.html 
+assignments done
+contact done
+index done (no heading)
+
+CCSF
+Google Analytics
+keyword
+web development
+grid
+flexbox
+web accessibility
+sass
+SEO
+CSS animation
